@@ -33,7 +33,7 @@ func killServer(pidFile string) error {
 }
 
 func main() {
-	if err := killServer("server.pid"); err != nil {
+	if err := killServer("server.pid"); err != nil { //touch server.pid > hi | 353
 		fmt.Fprintf(os.Stderr, "error: %s\n", err)
 		os.Exit(1)
 	}
