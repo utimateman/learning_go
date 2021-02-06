@@ -14,3 +14,8 @@ go test -v -bench . -run TTT (only benchmark)
 go test -v -bench . -run TTT -cpuprofile=prof.out
 go tool pprof prof.out
 list functionname
+
+curl -d@request.json http://localhost:8080/math
+http test package
+
+install wrk
